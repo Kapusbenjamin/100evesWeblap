@@ -31,7 +31,9 @@
 }
 
 .kicsi div{
-    width: 30%;
+    height: 250px;
+    width: auto;
+    
 }
 
 /* .kicsi div:hover{
@@ -43,7 +45,7 @@
 }
 
 img{
-    width: 100%;
+    width: auto;
 }
 
 
@@ -107,17 +109,20 @@ main{
 @media screen and (max-width: 900px) {
     .kicsi{
         display: grid;
+        text-align: center;
     }
     .kicsi:nth-child(odd) div{
+        display: block;
         margin:0;
         width: 100%;
     }
     .kicsi:nth-child(even) div{
+        display: block;
         margin:0;
         width: 100%;
     }
     img{
-        width: 100%
+        height: 100%;
     }
 
 
