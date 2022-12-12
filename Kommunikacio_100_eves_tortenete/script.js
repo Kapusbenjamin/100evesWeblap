@@ -1,18 +1,35 @@
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementsByTagName("main")[0].style.marginLeft = "250px";
-    document.getElementsByTagName("header")[0].style.marginLeft = "250px";
-    document.getElementsByTagName("footer")[0].style.marginLeft = "250px";
-
-}
-
-function closeNav() {
+    if(window.innerWidth < 550){
+      document.getElementsByTagName("main")[0].style.display = "none";
+      document.getElementsByTagName("header")[0].style.display = "none";
+      document.getElementsByTagName("footer")[0].style.display = "none";
+      document.getElementById("mySidenav").style.display = "block";
+      document.getElementById("mySidenav").style.width = window.innerWidth + "px";
+      document.getElementById("mySidenav").addEventListener("click", ()=>{
+        closeNav()
+      })
+    }
+    else{
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementsByTagName("main")[0].style.marginLeft = "250px";
+      document.getElementsByTagName("header")[0].style.marginLeft = "250px";
+      document.getElementsByTagName("footer")[0].style.marginLeft = "250px";
+    }
+  }
+  
+  function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementsByTagName("main")[0].style.marginLeft= "0";
-    document.getElementsByTagName("header")[0].style.marginLeft = "0";
-    document.getElementsByTagName("footer")[0].style.marginLeft = "0";
-
+    if(window.innerWidth < 550){
+      document.getElementsByTagName("main")[0].style.display = "block";
+      document.getElementsByTagName("header")[0].style.display = "block";
+      document.getElementsByTagName("footer")[0].style.display = "block";
+    }
+    else{
+      document.getElementsByTagName("main")[0].style.marginLeft= "0";
+      document.getElementsByTagName("header")[0].style.marginLeft = "0";
+      document.getElementsByTagName("footer")[0].style.marginLeft = "0";
+    }
 }
 
 window.onload = () => {
