@@ -18,7 +18,6 @@
     align-items: center;
 }
 
-
 .kicsi:nth-child(odd) div{
     display: flex;
     float: left;
@@ -33,15 +32,11 @@
 .kicsi div{
     height: 250px;
     width: auto;
-    
 }
 
-/* .kicsi div:hover{
-    transform: scale(3);
-    transition: 2s;
-} */
 .kicsi{
     min-height: 250px;
+    margin-top: 35px;
 }
 
 img{
@@ -56,7 +51,6 @@ img{
 }
 
 main{
-    /* background-color: #aaa; */
     background-color: #240090;
     color: #FFF;
 }
@@ -106,7 +100,7 @@ main{
       text-align: center;
   }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .kicsi{
         display: grid;
         text-align: center;
@@ -114,11 +108,13 @@ main{
     .kicsi:nth-child(odd) div{
         display: block;
         margin:0;
+        margin-bottom: 10px;
         width: 100%;
     }
     .kicsi:nth-child(even) div{
         display: block;
         margin:0;
+        margin-bottom: 10px;
         width: 100%;
     }
     img{
@@ -126,7 +122,25 @@ main{
     }
 
 
-  }
+}
+
+@media screen and (max-width: 400px) {
+    
+    .zoomD{
+        height: auto;
+        max-width: 100%;
+    }
+
+    .kicsi div{
+        width: auto;
+        height: auto;
+    }
+
+    
+
+
+
+}
 
 
 
