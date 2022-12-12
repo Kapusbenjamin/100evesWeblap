@@ -43,6 +43,7 @@ window.onload = () => {
         lightbox.innerHTML = "";
         lightbox.appendChild(clone);
         lightbox.className = "show";
+        lightbox.children[0].style.height = window.innerHeight + "px"
       };
     }}
    
