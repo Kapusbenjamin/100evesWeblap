@@ -1,4 +1,8 @@
 
+window.addEventListener("resize", ()=>{
+  closeNav()
+})
+
 function openNav() {
     if(window.innerWidth < 550){
       document.getElementsByTagName("main")[0].style.display = "none";
