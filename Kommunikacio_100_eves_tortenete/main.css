@@ -30,9 +30,8 @@
 }
 
 .kicsi div{
-    height: 250px;
-    width: auto;
-}
+    max-width: 250px;
+} 
 
 .kicsi{
     min-height: 250px;
@@ -40,7 +39,8 @@
 }
 
 img{
-    width: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -95,15 +95,18 @@ main{
 @media screen and (max-width: 800px) {
     .kicsi{
         display: grid;
-        text-align: center;
+        text-align: left;
+        place-items: center;
     }
     .kicsi:nth-child(odd) div{
         display: block;
         margin:0;
         margin-bottom: 10px;
         width: 100%;
+        text-align: center;
     }
     .kicsi:nth-child(even) div{
+        text-align: center;
         display: block;
         margin:0;
         margin-bottom: 10px;
