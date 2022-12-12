@@ -4,7 +4,7 @@ window.addEventListener("resize", ()=>{
 })
 
 function openNav() {
-    if(window.innerWidth < 550){
+    if(window.innerWidth < 500){
       document.getElementsByTagName("main")[0].style.display = "none";
       document.getElementsByTagName("header")[0].style.display = "none";
       document.getElementsByTagName("footer")[0].style.display = "none";
@@ -24,7 +24,7 @@ function openNav() {
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    if(window.innerWidth < 550){
+    if(window.innerWidth < 500){
       document.getElementsByTagName("main")[0].style.display = "block";
       document.getElementsByTagName("header")[0].style.display = "block";
       document.getElementsByTagName("footer")[0].style.display = "block";
