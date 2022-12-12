@@ -41,3 +41,13 @@ header, main, footer, #main{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+
+@media screen and (max-width: 450px) {
+    .sidenav{
+        padding-top: 50px;
+    }
+
+    .sidenav a {
+        text-align: center;
+    }
+}

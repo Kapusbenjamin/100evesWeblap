@@ -116,7 +116,7 @@ main{
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     
     .zoomD{
         height: auto;
@@ -127,10 +127,6 @@ main{
         width: auto;
         height: auto;
     }
-
-    
-
-
 
 }
 
